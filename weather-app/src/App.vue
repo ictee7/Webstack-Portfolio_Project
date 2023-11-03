@@ -34,4 +34,8 @@ body{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-top: 5rem;
 }
+
+.btn-search{
+  background-image: linear-gradient(to right, cyan, magenta);
+}
 </style>
