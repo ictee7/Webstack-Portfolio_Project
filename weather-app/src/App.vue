@@ -6,6 +6,7 @@
         <div class="searchbar w-50 mx-2">
           <input type="text" class="input form-control" placeholder="Enter a City">
         </div>
+        <button class="btn-search btn btn-primary">Search <i class="fas fa-search"></i></button>
       </div>
     </div>
   </div>
