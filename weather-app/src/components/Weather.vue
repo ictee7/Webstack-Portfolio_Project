@@ -17,19 +17,19 @@
                     <tbody>
                         <tr>
                             <th>Sea Level</th>
-                            <td>100</td>
+                            <td>{{ sea_level }}</td>
                         </tr>
                         <tr>
-                            <th>Sea Level</th>
-                            <td>100</td>
+                            <th>Humidity</th>
+                            <td>{{ humidity }}</td>
                         </tr>
                         <tr>
-                            <th>Sea Level</th>
-                            <td>100</td>
+                            <th>Wind</th>
+                            <td>{{ wind }}</td>
                         </tr>
                   </tbody>
                 </table>
-                <DaysWeather></DaysWeather>
+                <DaysWeather :cityname="cityname"></DaysWeather>
                 <div id="div_form" class="d-flex m-3 justify-content-center">
                     <form action="">
                         <input type="button" value="Change Location" @click="changeLocation" class="btn change-btn btn-primary">
