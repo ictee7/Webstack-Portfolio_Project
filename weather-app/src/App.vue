@@ -4,7 +4,7 @@
       <h1 class="mb-5">Weather App</h1>
       <div class="d-flex justify-content-center h-100">
         <div class="searchbar w-50 mx-2">
-          <input type="text" class="input form-control" placeholder="Enter a City">
+          <input type="text" class="input form-control" v-model="city" placeholder="Enter a City">
         </div>
         <button class="btn-search btn btn-primary">Search <i class="fas fa-search"></i></button>
       </div>
@@ -18,6 +18,19 @@ export default (await import('vue')).defineComponent({
   name: 'App',
   components: {
     
+  },
+  data(){
+    return {
+      city: '',
+      showWeather: false,
+    }
+  },
+  methods: {
+    async searchWeather (){
+      this.showWeather = false;
+      await this.$nextTick();
+      this.showWeather = true;
+    }
   }
 })
 </script>
