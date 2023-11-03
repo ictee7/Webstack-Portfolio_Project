@@ -51,6 +51,48 @@
         DaysWeather
        
     },
+
+    props: {
+        city:String,
+      },
+      data(){
+        return{
+          cityname: this.city,
+
+          temperature: null,
+          description: null,
+          iconUrl: null,
+          date: null,
+          time: null,
+          name: null,
+          sea_level: null,
+          wind: null,
+          humidity: null,
+          country: null,
+          monthNames: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+        }
+      },
+      methods: {
+        changeLocation(){
+          window.location.reload();
+        }
+      },
+      async created(){
+        const response = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=9c806b307f14f19a337a1fe3a0f5ba6b`)
+        const weatherData = response.data;
+        this.temperature = Math.round(weatherData.main.temp);
+        this.description = weatherData.weather[0].description;
+        this.name = weatherData.name;
+        this.wind = weatherData.wind.speed;
+        this.sea_level = weatherData.main.sea_level;
+        this.humidity = weatherData.main.humidity;
+        this.country = weatherData.sys.country;
+        this.iconUrl = `https://api.openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+        const d = new Date();
+        this.date = d.getDate() + '-' + this.monthNames[d.getMonth()] + '-' + d.getFullYear();
+        this.time = d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
+        console.log(weatherData);
+      }
  
   })
   </script>
