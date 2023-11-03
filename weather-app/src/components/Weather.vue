@@ -4,11 +4,11 @@
             <div class="card main-div w-100">
                 <div class="p-3">
                     <h2 class="mb-1 day">Today</h2>
-                    <p class="text-light date mb-0">date</p>
-                    <h2 class="place"><i class="fa fa-location">Rio <small>country</small></i></h2>
+                    <p class="text-light date mb-0">{{date}}</p>
+                    <h2 class="place"><i class="fa fa-location">{{  name  }} <small>{{ country }}</small></i></h2>
                     <div class="temp">
-                        <h1 class="weather-temp">19&deg;</h1>
-                        <h2 class="text-light">description</h2>
+                        <h1 class="weather-temp">{{ temperature }}&deg;</h1>
+                        <h2 class="text-light">{{description}} <img :src="iconUrl"></h2>
                     </div>
                 </div>
             </div>
@@ -42,7 +42,7 @@
   </template>
   
   <script>
-  
+  import axios from 'axios';
   import DaysWeather from './DaysWeather.vue'
   export default (await import('vue')).defineComponent({
     name: 'myWeather',
