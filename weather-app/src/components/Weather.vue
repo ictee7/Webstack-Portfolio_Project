@@ -30,6 +30,7 @@
                     </tr>
               </tbody>
             </table>
+            <DaysWeather></DaysWeather>
             <div id="div_form" class="d-flex m-3 justify-content-center">
                 <form action="">
                     <input type="button" value="Change Location" @click="changeLocation" class="btn change-btn btn-primary">
@@ -41,10 +42,12 @@
   
   <script>
   
+  import DaysWeather from './DaysWeather.vue'
   export default (await import('vue')).defineComponent({
     name: 'myWeather',
     
     components: {
+        DaysWeather
        
     },
  
