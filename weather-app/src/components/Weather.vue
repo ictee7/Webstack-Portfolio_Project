@@ -12,31 +12,32 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="card card-2 w-100">
-            <table class="m-4">
-                <tbody>
-                    <tr>
-                        <th>Sea Level</th>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <th>Sea Level</th>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <th>Sea Level</th>
-                        <td>100</td>
-                    </tr>
-              </tbody>
-            </table>
-            <DaysWeather></DaysWeather>
-            <div id="div_form" class="d-flex m-3 justify-content-center">
-                <form action="">
-                    <input type="button" value="Change Location" @click="changeLocation" class="btn change-btn btn-primary">
-                </form>
+            <div class="card card-2 w-100">
+                <table class="m-4">
+                    <tbody>
+                        <tr>
+                            <th>Sea Level</th>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <th>Sea Level</th>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <th>Sea Level</th>
+                            <td>100</td>
+                        </tr>
+                  </tbody>
+                </table>
+                <DaysWeather></DaysWeather>
+                <div id="div_form" class="d-flex m-3 justify-content-center">
+                    <form action="">
+                        <input type="button" value="Change Location" @click="changeLocation" class="btn change-btn btn-primary">
+                    </form>
+                </div>
             </div>
         </div>
+       
     </div>
   </template>
   
