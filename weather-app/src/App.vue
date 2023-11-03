@@ -23,5 +23,15 @@ export default (await import('vue')).defineComponent({
 </script>
 
 <style>
-
+body{
+  background-color: #121212 !important;
+}
+.header{
+  background-color: #212730;
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 5rem;
+}
 </style>
