@@ -7,28 +7,14 @@
                 <div class="py-3">day</div>
                 <div class="py-3">120c</div>
             </li>
-            <li class="li_active">
-                <div class="py-3">icon</div>
-                <div class="py-3">day</div>
-                <div class="py-3">120c</div>
-            </li>
-            <li class="li_active">
-                <div class="py-3">icon</div>
-                <div class="py-3">day</div>
-                <div class="py-3">120c</div>
-            </li>
-            <li class="li_active">
-                <div class="py-3">icon</div>
-                <div class="py-3">day</div>
-                <div class="py-3">120c</div>
-            </li>
         </ul>
     </div>
 </template>
   
   <script>
   
- 
+  import axios from 'axios';
+  import moment from 'moment';
   export default (await import('vue')).defineComponent({
 
     props: {
@@ -61,7 +47,7 @@
                         iconUrl: `https://api.openweathermap.org/img/w/${item.weather[0].icon}.png`,
                     };
                 }).reduce((acc, item) => {
-                    if(!acc.some(day => day.data.isSame(item.date, 'day'))){
+                    if(!acc.some(day => day.date.isSame(item.date, 'day'))){
                         acc.push(item);
                     }
                     return acc;
