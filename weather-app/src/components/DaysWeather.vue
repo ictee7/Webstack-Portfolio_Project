@@ -1,11 +1,11 @@
 <template>
     <div class="days-tab text-center">
-        <div class="loading">Loading...</div>
-        <ul class="p-0">
-            <li class="li_active">
-                <div class="py-3">icon</div>
-                <div class="py-3">day</div>
-                <div class="py-3">120c</div>
+        <div v-if="loading" class="loading">Loading...</div>
+        <ul v-else class="p-0">
+            <li v-for="day in forecast" :key="day.date" class="li_active">
+                <div class="py-3"><img :src="day.iconUrl"></div>
+                <div class="py-3">{{getDayName(day.date)}}</div>
+                <div class="py-3">{{day.temperature}}&deg;C</div>
             </li>
         </ul>
     </div>
