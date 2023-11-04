@@ -17,7 +17,8 @@
                     <tbody>
                         <tr>
                             <th>Sea Level</th>
-                            <td>{{ sea_level }}</td>
+                            <td v-if="sea_level > 0">{{ sea_level }}</td>
+                            <td v-else>Null</td>
                         </tr>
                         <tr>
                             <th>Humidity</th>
