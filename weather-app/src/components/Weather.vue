@@ -33,7 +33,7 @@
                 <DaysWeather :cityname="cityname"></DaysWeather>
                 <div id="div_form" class="d-flex m-3 justify-content-center">
                     <form action="">
-                        <input type="button" value="Change Location" @click="changeLocation" class="btn change-btn btn-primary">
+                        <input type="button" value="Change Location" @click="changeLocation" class="btn change_btn btn-primary">
                     </form>
                 </div>
             </div>
