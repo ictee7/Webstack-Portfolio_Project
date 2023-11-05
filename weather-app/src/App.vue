@@ -16,7 +16,12 @@
 
 <script>
 
+
+
 import Weather from './components/Weather.vue'
+
+
+
 export default (await import('vue')).defineComponent({
   name: 'App',
   components: {
