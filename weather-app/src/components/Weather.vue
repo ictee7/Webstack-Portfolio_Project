@@ -43,6 +43,7 @@
   </template>
   
   <script>
+  
   import axios from 'axios';
   import DaysWeather from './DaysWeather.vue'
   export default (await import('vue')).defineComponent({
@@ -114,7 +115,7 @@
   }
   .main-div{
     border-radius: 20px;
-    color: #fff;
+    color: #fff !important;
     background-image: url('../../images/img.jpg');
     background-size: cover;
 
@@ -124,6 +125,7 @@
   }
   .temp{
     position:absolute;
+    color: #fff !important;
     bottom: 0;
   }
   .main-div:hover{
