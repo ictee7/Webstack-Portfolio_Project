@@ -116,7 +116,8 @@
   .main-div{
     border-radius: 20px;
     color: #fff !important;
-    background-image: url('../../images/img.jpg');
+    background-image: url('../../images/img2.jpg');
+    /*background-image: url("https://unsplash.com/photos/dew-drops-on-glass-panel-bWtd1ZyEy6w") !important;*/
     background-size: cover;
 
     background-color: rgba (0,0,0,0.5);
