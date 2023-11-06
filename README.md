@@ -1,1 +1,3 @@
-**This is a Weather app, to help people know the weather conditions in various locations**
+#Weather-app
+
+Weather-app lets users type in any location and get the current weather and also a forecast for the upcoming 4 days
