@@ -5,7 +5,7 @@
 
 # Table Of Content
 
-*[Installation](#installation)
-*[Usage](#usage)
-*[API Integration](#api-integration)
-*[Configuration](#configuration)
+* [Installation](#installation)
+* [Usage](#usage)
+* [API Integration](#api-integration)
+* [Configuration](#configuration)
