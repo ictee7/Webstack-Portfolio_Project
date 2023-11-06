@@ -6,7 +6,6 @@
 # Table Of Content
 
  * [Usage](#usage)
- * [API Integration](#api-integration)
  * [Configuration](#configuration)
 
  ## Usage
@@ -26,3 +25,12 @@ $ npm install
 # Run the app
 $ npm run serve
 ```
+
+## Configuration
+
+For the backend this app uses a weather API called [OpenWeatherMap](https://openweathermap.org/) . For the app to be fully functional follow these steps:
+
+1. Create an account at [OpenWeatherMap](https://openweathermap.org/) for free.
+2. Go to [API Key](https://home.openweathermap.org/api_keys) to get the key.
+3. In your projects folder navigate to `src/components` and edit the DaysWeather.vue file and paste your unique apiKey
+4. In your projects folder navigate to `src/components` and edit the Weather.vue file and paste your unique apiKey
