@@ -36,7 +36,7 @@
         async fetchWeatherData(){
             const apiKey ='9c806b307f14f19a337a1fe3a0f5ba6b';
             const city = this.cityname;
-            const apiUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
+            const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
 
             await axios.get(apiUrl).then(Response => {
                 const forecastData = Response.data.list;
