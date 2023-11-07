@@ -35,8 +35,8 @@ For the backend this app uses a weather API called [OpenWeatherMap](https://open
 
 1. Create an account at [OpenWeatherMap](https://openweathermap.org/) for free.
 2. Go to [API Key](https://home.openweathermap.org/api_keys) page to get the key.
-3. In your projects folder navigate to `src/components` and edit the DaysWeather.vue file and paste your unique apiKey.
-4. In your projects folder navigate to `src/components` and edit the Weather.vue file and paste your unique apiKey.
+3. In your projects folder create an `.env` file. In that file create a variable called `VUE_APP_API_KEY` and assign your unique API key.
+4. Note that if you are using `Vue CLI 2` and below versions you might also need to install a node package called `dotenv` .
 
 ## Project Demo
 
