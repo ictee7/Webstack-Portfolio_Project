@@ -5,6 +5,7 @@
                 <div class="p-3">
                     <h2 class="mb-1 day">Today</h2>
                     <p class="text-light date mb-0">{{date}}</p>
+                    <small>{{time}}</small>
                     <h2 class="place"><i class="fa fa-location">{{  name  }} <small>{{ country }}</small></i></h2>
                     <div class="temp">
                         <h1 class="weather-temp">{{ temperature }}&deg;</h1>
