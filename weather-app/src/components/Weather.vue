@@ -81,7 +81,7 @@
         }
       },
       async created(){
-        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=9c806b307f14f19a337a1fe3a0f5ba6b`)
+        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=${process.env.VUE_APP_API_KEY}`)
         const weatherData = response.data;
         this.temperature = Math.round(weatherData.main.temp);
         this.description = weatherData.weather[0].description;
