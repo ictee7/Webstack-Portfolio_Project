@@ -47,7 +47,8 @@ To try out and see the app in action got to this site [WeatherApp](http://alx.ap
 For those wanting to contribute, this app has the following issues:
 
 1. The app is not responsive, that is if you open it on mobile browser it comes out distorted.
-2. Fix button issue to automaticaly submit the search button once 'Enter' key is pressed.
+2. Fix button issue to automaticaly submit the search button once `Enter` key is pressed.
+3. Add an autocomplete feature when searching for location
 
 ## Acknowledgements
 
